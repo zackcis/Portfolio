@@ -7,7 +7,7 @@ function App() {
   return (
     <MyProvider>
       <Routes >
-        <Route path='/portfolio' element={<HomePage />} />
+        <Route path='/Portfolio' element={<HomePage />} />
         {/* <Route path='/' element={<AboutPage />} /> */}
       </Routes >
     </MyProvider>
