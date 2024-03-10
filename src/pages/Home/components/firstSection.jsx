@@ -116,8 +116,7 @@ export const FirstSection = () => {
                     <img src={ana} alt="" className='w-[350px] imagi ' />
                 </div>
             </div>
-            <div className='about w-[100%] bg-[#101630] h-[70vh]  
-             flex justify-center items-center' data-aos="fade-left" data-aos-duration="2500">
+            <div className='about w-[100%] bg-[#101630] h-[70vh] flex justify-center items-center' data-aos="fade-left" data-aos-duration="2500">
                 <div className='w-[80%] h-[100%] flex justify-center items-center'>
                     <div className='w-[80%] h-[100%] flex justify-around items-center text-center'>
                         <div className='about-image w-[70%] '>
@@ -132,8 +131,7 @@ export const FirstSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='projects w-[100%] bg-[#101630] h-[70vh]  
-             flex flex-col justify-around items-center' data-aos="fade-down" data-aos-duration="2500">
+            <div className='projects w-[100%] bg-[#101630] h-[70vh] flex flex-col justify-around items-center' data-aos="fade-down" data-aos-duration="2500">
                 <h1 className='font-bold text-center text-white text-3xl kbira'>
                     PROJECTS
                 </h1>
@@ -183,38 +181,40 @@ export const FirstSection = () => {
                     <h1 className='text-2xl text-white kbira'>
                         Contact
                     </h1>
-                    <div className='w-[50%] h-[80%] flex justify-center items-center'>
-                        <div className='drop-message flex flex-col gap-7'>
+                    <div className='w-[70%] h-[80%] flex justify-center items-center'>
+                        <div className='drop-message flex flex-col justify-start items-start gap-7 text-white'>
                             <h1 className='kbira text-2xl text-white'>Drop a message</h1>
                             <p className='w-[60%] '>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, distinctio. Ex beatae quaerat voluptates impedit facere. Velit veritatis dolore accusamus!
                             </p>
-                            <div className='tele flex justify-center items-center w-[60%]'>
-                                <FaSquarePhone />
+                            <div className='tele flex gap-4 items-center w-[60%]'>
+                                <FaSquarePhone className='text-5xl' />
                                 <p>
                                     +212699312362
                                 </p>
                             </div>
-                            <div className='message flex justify-center items-center w-[60%]'>
-                                <BiSolidMessageDetail />
+                            <div className='message flex gap-4  items-center w-[60%]'>
+                                <BiSolidMessageDetail className='text-5xl' />
                                 <p>
                                     zakaria.eldahar@gmail.com
                                 </p>
                             </div>
-                            <div className='local flex justify-center items-center w-[60%]'>
-                                <FaLocationDot className='' />
+                            <div className='local flex gap-4 items-center w-[60%]'>
+                                <FaLocationDot className='text-5xl' />
                                 <p>
                                     Morocco,Casablanca,Sidi moumen Boulvard houssein soussi, Rue 29
                                 </p>
                             </div>
                         </div>
-                        <div className='form'>
-                            <form action="">
-                                <input type="text" placeholder='Name' />
-                                <input type="email" placeholder='Email' />
-                                <textarea name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
-                                <button>SEND</button>
-                            </form>
+                        <div className='rounded-lg bg-gradient-to-r from-[#4ba9db] from-10% via-sky-500 via-30% to-[#4a3bc5] to-90% w-[50%] h-[60%] flex flex-col justify-center items-center  shadow-lg shadow-black'>
+                            <div className='form w-[80%] flex flex-col justify-center items-center '>
+                                <form className='gap-5 flex flex-col' action="">
+                                    <input className='w-[80%] rounded-lg bg-[#101630]' type="text" placeholder='Name' />
+                                    <input className='w-[80%] rounded-lg bg-[#101630]' type="email" placeholder='Email' />
+                                    <textarea className='w-[80%] rounded-lg bg-[#101630] h-[100px]' name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
+                                    <button className='bg-[#101630] text-white font-bold w-[100px] p-3 rounded-lg'>Send</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                     <hr />
