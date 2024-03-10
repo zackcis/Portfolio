@@ -24,34 +24,34 @@ import { FaLocationDot } from "react-icons/fa6";
 
 export const FirstSection = () => {
     const [test, setTest] = useContext(MyContext)
-    const [skill,setSkill] = useState([
+    const [skill, setSkill] = useState([
         {
-            picture : js,
-            title : 'Javascript'
+            picture: js,
+            title: 'Javascript'
         },
         {
-            picture : css,
-            title : 'CSS'
+            picture: css,
+            title: 'CSS'
         },
         {
-            picture : html,
-            title : 'HTML'
+            picture: html,
+            title: 'HTML'
         },
         {
-            picture : boot,
-            title : 'Bootsrap'
+            picture: boot,
+            title: 'Bootsrap'
         },
         {
-            picture : tailwind,
-            title : 'Tailwind'
+            picture: tailwind,
+            title: 'Tailwind'
         },
         {
-            picture : react,
-            title : 'React.js'
+            picture: react,
+            title: 'React.js'
         },
         {
-            picture : laravel,
-            title : 'Laravel'
+            picture: laravel,
+            title: 'Laravel'
         },
     ])
     const [arrayi, setArrayi] = useState([{
@@ -138,10 +138,10 @@ export const FirstSection = () => {
                     PROJECTS
                 </h1>
                 <div className='w-[100%] flex flex-wrap justify-center items-center'>
-                {
-                    arrayi.map(element =>
-                        
-                        <div className='cards  w-[25%] h-[100%] flex flex-wrap justify-around'>
+                    {
+                        arrayi.map(element =>
+
+                            <div className='cards  w-[25%] h-[100%] flex flex-wrap justify-around'>
                                 <div class="max-w-sm shadow-lg shadow-white bg-[#101630] rounded-lg  dark:bg-gray-800 dark:border-gray-700">
                                     <img class="rounded-t-lg" src={element.picture} alt="" className='  ' />
                                     <div class="p-5">
@@ -157,10 +157,10 @@ export const FirstSection = () => {
                                         </a>
                                     </div>
                                 </div>
-                            
-                        </div>
-                            )
-                }
+
+                            </div>
+                        )
+                    }
                 </div>
 
 
@@ -168,58 +168,58 @@ export const FirstSection = () => {
             <div data-aos="fade-up" data-aos-duration="2500" className='skills  w-[100%] bg-[#101630] h-[50vh]   flex flex-col justify-center items-center'>
                 <h1 className='font-bold text-center text-white kbira text-3xl'>Skills</h1>
                 <div className='icons flex flex-wrap justify-around items-center gap-10 h-[80%]'>
-                    { skill.map(skyll=>
-                    <div className='flex flex-col justify-center items-center'>
-                    <img src={skyll.picture} alt="" className='w-[170px] p-10' />
-                    <h2 className='kbira 2xl text-white'>{skyll.title}</h2>
-                    </div>
+                    {skill.map(skyll =>
+                        <div className='flex flex-col justify-center items-center'>
+                            <img src={skyll.picture} alt="" className='w-[170px] p-10' />
+                            <h2 className='kbira 2xl text-white'>{skyll.title}</h2>
+                        </div>
                     )
                     }
 
                 </div>
             </div>
             <div className='bg-[#101630] w-[100%]'>
-            <div className='rounded-t-[200px] contact w-[100%] bg-gradient-to-r from-[#4733bccb] from-10% via-sky-500 via-30% to-[#4f97d6bb] to-90% h-[70vh]  flex flex-col justify-center items-center '>
-                <h1 className='text-2xl text-white kbira'>
-                    Contact
-                </h1>
-                <div className='w-[50%] h-[80%] flex justify-center items-center'>
-                    <div className='drop-message flex flex-col gap-7'>
-                        <h1 className='kbira text-2xl text-white'>Drop a message</h1>
-                        <p className='w-[60%] '>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, distinctio. Ex beatae quaerat voluptates impedit facere. Velit veritatis dolore accusamus!
-                        </p>
-                        <div className='tele flex justify-center items-center w-[60%]'>
-                            <FaSquarePhone />
-                            <p>
-                                +212699312362
+                <div className='rounded-t-[200px] contact w-[100%] bg-gradient-to-r from-[#4733bccb] from-10% via-sky-500 via-30% to-[#4f97d6bb] to-90% h-[70vh]  flex flex-col justify-center items-center '>
+                    <h1 className='text-2xl text-white kbira'>
+                        Contact
+                    </h1>
+                    <div className='w-[50%] h-[80%] flex justify-center items-center'>
+                        <div className='drop-message flex flex-col gap-7'>
+                            <h1 className='kbira text-2xl text-white'>Drop a message</h1>
+                            <p className='w-[60%] '>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, distinctio. Ex beatae quaerat voluptates impedit facere. Velit veritatis dolore accusamus!
                             </p>
+                            <div className='tele flex justify-center items-center w-[60%]'>
+                                <FaSquarePhone />
+                                <p>
+                                    +212699312362
+                                </p>
+                            </div>
+                            <div className='message flex justify-center items-center w-[60%]'>
+                                <BiSolidMessageDetail />
+                                <p>
+                                    zakaria.eldahar@gmail.com
+                                </p>
+                            </div>
+                            <div className='local flex justify-center items-center w-[60%]'>
+                                <FaLocationDot className='' />
+                                <p>
+                                    Morocco,Casablanca,Sidi moumen Boulvard houssein soussi, Rue 29
+                                </p>
+                            </div>
                         </div>
-                        <div className='message flex justify-center items-center w-[60%]'>
-                            <BiSolidMessageDetail />
-                            <p>
-                                zakaria.eldahar@gmail.com
-                            </p>
-                        </div>
-                        <div className='local flex justify-center items-center w-[60%]'>
-                            <FaLocationDot className='' />
-                            <p>
-                                Morocco,Casablanca,Sidi moumen Boulvard houssein soussi, Rue 29
-                            </p>
+                        <div className='form'>
+                            <form action="">
+                                <input type="text" placeholder='Name' />
+                                <input type="email" placeholder='Email' />
+                                <textarea name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
+                                <button>SEND</button>
+                            </form>
                         </div>
                     </div>
-                    <div className='form'>
-                        <form action="">
-                            <input type="text" placeholder='Name' />
-                            <input type="email" placeholder='Email' />
-                            <textarea name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
-                            <button>SEND</button>
-                        </form>
-                    </div>
-                </div>
-                <hr />
+                    <hr />
 
-            </div>
+                </div>
             </div>
         </>
     );
