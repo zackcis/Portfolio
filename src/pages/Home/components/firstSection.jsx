@@ -1,5 +1,5 @@
 
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import './firstSection.sass'
 import { MyContext } from '../../../utils/contextProvider';
 import Aos from 'aos';
@@ -16,6 +16,7 @@ import crypto from '../../../assets/img/Crypto.png'
 import ecommerce from '../../../assets/img/Ecommerce.png'
 import movies from '../../../assets/img/Movies.png'
 import 'aos/dist/aos.css';
+import Typed from 'typed.js';
 import { FaSquarePhone } from "react-icons/fa6";
 import { BiSolidMessageDetail } from "react-icons/bi";
 import { FaLocationDot } from "react-icons/fa6";
@@ -73,6 +74,22 @@ export const FirstSection = () => {
         link: '',
     }])
 
+    const el = useRef(null);
+
+    useEffect(() => {
+        const typed = new Typed(el.current, {
+            strings: ["UI/UX Designer",'Full-Stack Software Developer'],
+            typeSpeed: 20,
+            backSpeed: 40,
+        });
+
+        return () => {
+            // Destroy Typed instance during cleanup to stop animation
+            typed.destroy();
+        };
+    }, []);
+
+
     useEffect(() => {
         Aos.init();
     }, [])
@@ -103,10 +120,12 @@ export const FirstSection = () => {
                     </div>
                 </div>
             </nav>
-            <div data-aos="fade-right" data-aos-duration="2500" className='bg-[#101630] w-[100%] h-screen flex justify-center items-center '>
+            <div data-aos="fade-right" data-aos-duration="2500" className='bg-[#101630] w-[100%] h-[65vh] flex justify-center items-center '>
                 <div className='w-[100%] h-[70%] flex flex-col justify-around items-center'>
                     <p className=' w-[60%] text-start text-5xl text-gray-500 '>
-                        <span className='font-bold leading-[100px]  '>I'm a</span><br /> <span className='text-white kbira  text-7xl'>Full-Stack Software Developer .</span>
+                        <span className='font-bold leading-[100px]  '>I'm a {''}</span><br />
+                        {/* <span className='text-white kbira  text-7xl'>Full-Stack Software Developer .</span> */}
+                        <span ref={el} className='text-white kbira text-7xl'></span>
                     </p>
                     <div className='w-[60%] flex justify-start'>
                         <button className='items-start p-[30px] rounded-full bg-gradient-to-r from-[#49b0d8] from-10% via-sky-500 via-30% to-[#3a2c8f] to-90% text-white font-bold '>Previous Project</button>
@@ -144,7 +163,7 @@ export const FirstSection = () => {
                                     <img class="rounded-t-lg" src={element.picture} alt="" className='  ' />
                                     <div class="p-5">
                                         <a href="#">
-                                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{element.title}</h5>
+                                            <h5 class="mb-2 text-2xl  tracking-tight text-white font-bold dark:text-white">{element.title}</h5>
                                         </a>
                                         <p class="mb-3 font-normal text-white  dark:text-gray-400">{element.description}</p>
                                         <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -177,7 +196,7 @@ export const FirstSection = () => {
                 </div>
             </div>
             <div className='bg-[#101630] w-[100%]'>
-                <div className='rounded-t-[200px] contact w-[100%] bg-gradient-to-r from-[#4733bccb] from-10% via-sky-500 via-30% to-[#4f97d6bb] to-90% h-[70vh]  flex flex-col justify-center items-center '>
+                <div data-aos="fade-up" data-aos-duration="2500" className='rounded-t-[200px] contact w-[100%] bg-gradient-to-r from-[#4733bccb] from-10% via-sky-500 via-30% to-[#4f97d6bb] to-90% h-[70vh]  flex flex-col justify-center items-center '>
                     <h1 className='text-2xl text-white kbira'>
                         Contact
                     </h1>
