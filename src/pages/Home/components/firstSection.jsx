@@ -145,7 +145,7 @@ export const FirstSection = () => {
                 <h1 className='font-bold text-center text-white text-3xl kbira'>
                     PROJECTS
                 </h1>
-                <div className='w-[100%] flex flex-wrap justify-center items-center max-[430px]:flex-col max-[430px]:h-[98%]  max-[430px]:gap-[80px]'>
+                <div className='w-[100%] flex flex-wrap justify-center items-center max-[430px]:flex-col max-[430px]:h-[98%]  max-[430px]:gap-[80px] gap-9'>
                     {
                         arrayi.map(element =>
 
@@ -202,7 +202,7 @@ export const FirstSection = () => {
                     <h1 className='text-2xl text-white kbira max-[430px]:text-center'>
                         Contact
                     </h1>
-                    <div className='w-[100%] h-[80%] flex justify-start items-center max-[430px]:flex-col  max-[430px]:items-center max-[430px]:gap-[100px]  max-[430px]:justify-center'>
+                    <div className='w-[50%] max-[430px]:w-[100%] h-[80%] flex justify-start items-center max-[430px]:flex-col  max-[430px]:items-center max-[430px]:gap-[100px]  max-[430px]:justify-center'>
                         <div className='drop-message flex flex-col gap-7 justify-start items-start max-[430px]:justify-center max-[430px]:items-center'>
                             <h1 className='kbira text-2xl text-white max-[430px]:text-center'>Drop a message</h1>
                             <p className='w-[60%] max-[430px]:text-center'>
