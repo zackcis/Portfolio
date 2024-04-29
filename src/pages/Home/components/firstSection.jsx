@@ -20,11 +20,39 @@ import { FaSquarePhone } from "react-icons/fa6";
 import { BiSolidMessageDetail } from "react-icons/bi";
 import { FaLocationDot } from "react-icons/fa6";
 import { Link } from 'react-scroll';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 
 export const FirstSection = () => {
-    const [test, setTest] = useContext(MyContext)
+    const [test, setTest] = useContext(MyContext);
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+            .sendForm('service_6cax8u7', 'template_z5idg8v', form.current, {
+                publicKey: '68pQe024jghocpcCR',
+            })
+            .then(
+                () => {
+                    // Clear input fields after successful submission
+                    setName('');
+                    setEmail('');
+                    setMessage('');
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    };
+    // const [test, setTest] = useContext(MyContext)
     const [skill, setSkill] = useState([
         {
             picture: js,
@@ -113,7 +141,7 @@ export const FirstSection = () => {
                         <span className='font-bold leading-[100px]  '>I'm a</span><br /> <span className='text-white kbira  text-7xl max-[430px]:text-3xl '>Full-Stack Software Developer .</span>
                     </p>
                     <div className='w-[50%] flex justify-start max-[430px]:justify-center'>
-                        <button className='items-start p-[30px] rounded-full bg-gradient-to-r from-[#49b0d8] from-10% via-sky-500 via-30% to-[#3a2c8f] to-90% text-white font-bold '>Previous Project</button>
+                        <button className='items-start p-[30px] rounded-full bg-gradient-to-r from-[#49b0d8] from-10% via-sky-500 via-30% to-[#3a2c8f] to-90% text-white font-bold '><Link smooth={true} duration={500} to="project" >Previous Project</Link></button>
                     </div>
                 </div>
                 <div className=' w-[50%]'>
@@ -235,27 +263,27 @@ export const FirstSection = () => {
                         </div>
                         <div class="max-w-md p-8 bg-gray-800 rounded-md shadow-md form-container w-[70%] max-[430px]:w-[90%]">
                             <h2 class="text-2xl font-semibold text-white mb-6">Say Something!</h2>
-                            <form className='overflow-x-hidden' action="https://fabform.io/f/insert-form-id" method="POST">
+                            <form className='overflow-x-hidden' ref={form} onSubmit={sendEmail} >
                                 <div class="mb-4">
-                                    <label for="name" class="block text-gray-300 text-sm font-bold mb-2">Your Name</label>
-                                    <input type="text" id="name" name="name" placeholder="John Doe" required
-                                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white" />
+                                    <label for="name" class="block text-gray-300 text-sm font-bold mb-2" >Your Name</label>
+                                    <input type="text" id="name" name="from_name" placeholder="John Doe" required
+                                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white" onChange={(e) => setName(e.target.value)} />
                                 </div>
                                 <div class="mb-4">
-                                    <label for="email" class="block text-gray-300 text-sm font-bold mb-2">Your Email</label>
-                                    <input type="email" id="email" name="email" placeholder="john@example.com" required
-                                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white" />
+                                    <label for="email" class="block text-gray-300 text-sm font-bold mb-2" >Your Email</label>
+                                    <input type="email" id="email" name="from_email" placeholder="john@example.com" required
+                                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white" onChange={(e) => setEmail(e.target.value)} />
                                 </div>
                                 <div class="mb-6">
                                     <label for="message" class="block text-gray-300 text-sm font-bold mb-2">Your Message</label>
                                     <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required
-                                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white"></textarea>
+                                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white" onChange={(e) => setMessage(e.target.value)}></textarea>
                                 </div>
-                                <button type="submit"
+
+                                <button type="submit" value="send" 
                                     class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
                                     Send Message
                                 </button>
-
                             </form>
                         </div>
                     </div>
