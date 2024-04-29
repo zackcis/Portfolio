@@ -24,34 +24,34 @@ import { FaLocationDot } from "react-icons/fa6";
 
 export const FirstSection = () => {
     const [test, setTest] = useContext(MyContext)
-    const [skill,setSkill] = useState([
+    const [skill, setSkill] = useState([
         {
-            picture : js,
-            title : 'Javascript'
+            picture: js,
+            title: 'Javascript'
         },
         {
-            picture : css,
-            title : 'CSS'
+            picture: css,
+            title: 'CSS'
         },
         {
-            picture : html,
-            title : 'HTML'
+            picture: html,
+            title: 'HTML'
         },
         {
-            picture : boot,
-            title : 'Bootsrap'
+            picture: boot,
+            title: 'Bootsrap'
         },
         {
-            picture : tailwind,
-            title : 'Tailwind'
+            picture: tailwind,
+            title: 'Tailwind'
         },
         {
-            picture : react,
-            title : 'React.js'
+            picture: react,
+            title: 'React.js'
         },
         {
-            picture : laravel,
-            title : 'Laravel'
+            picture: laravel,
+            title: 'Laravel'
         },
     ])
     const [arrayi, setArrayi] = useState([{
@@ -80,8 +80,8 @@ export const FirstSection = () => {
     return (
         <>
 
-            <nav class="bg-[#101630] w-[100%] flex justify-center items-center p-[5vh]">
-                <div class="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto p-4">
+            <nav class="bg-[#101630] w-[100%]  flex justify-center items-center pt-[5vh]">
+                <div class="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto ">
                     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                         <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                             <li>
@@ -105,10 +105,10 @@ export const FirstSection = () => {
             </nav>
             <div data-aos="fade-right" data-aos-duration="2500" className='bg-[#101630] w-[100%] h-screen flex justify-center items-center '>
                 <div className='w-[100%] h-[70%] flex flex-col justify-around items-center'>
-                    <p className=' w-[60%] text-start text-5xl text-gray-500 '>
+                    <p className=' w-[50%] text-start text-5xl text-gray-500 '>
                         <span className='font-bold leading-[100px]  '>I'm a</span><br /> <span className='text-white kbira  text-7xl'>Full-Stack Software Developer .</span>
                     </p>
-                    <div className='w-[60%] flex justify-start'>
+                    <div className='w-[50%] flex justify-start'>
                         <button className='items-start p-[30px] rounded-full bg-gradient-to-r from-[#49b0d8] from-10% via-sky-500 via-30% to-[#3a2c8f] to-90% text-white font-bold '>Previous Project</button>
                     </div>
                 </div>
@@ -116,14 +116,13 @@ export const FirstSection = () => {
                     <img src={ana} alt="" className='w-[350px] imagi ' />
                 </div>
             </div>
-            <div className='about w-[100%] bg-[#101630] h-[70vh]  
-             flex justify-center items-center' data-aos="fade-left" data-aos-duration="2500">
-                <div className='w-[80%] h-[100%] flex justify-center items-center'>
-                    <div className='w-[80%] h-[100%] flex justify-around items-center text-center'>
+            <div className='about w-[100%]  bg-[#101630] h-[70vh]  flex justify-center items-center' data-aos="fade-left" data-aos-duration="2500">
+                <div className='w-[90%] h-[100%] flex justify-center items-center'>
+                    <div className='w-[80%] h-[100%] flex justify-between items-center text-center gap-8'>
                         <div className='about-image w-[70%] '>
                             <img src={abouti} className='w-[100%] about-image' alt="" />
                         </div>
-                        <div className='about-script flex flex-col justify-around items-center text-center h-[50%] '>
+                        <div className='about-script flex flex-col justify-around items-center text-center h-[60%] '>
                             <h1 className='kbira text-white text-3xl'>About</h1>
                             <p className='w-[70%] text-2xl text-white '>
                                 Front End Web Developer passionate about software development and crafting engaging user experiences. Demonstrated expertise in client interaction and project management honed through freelancing endeavors. Committed to advancing front-end skills and staying abreast of emerging technologies to deliver exceptional digital solutions.
@@ -132,94 +131,119 @@ export const FirstSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='projects w-[100%] bg-[#101630] h-[70vh]  
-             flex flex-col justify-around items-center' data-aos="fade-down" data-aos-duration="2500">
+            <div className='projects w-[100%]  bg-[#101630] h-[70vh]  
+            flex flex-col justify-around items-center' data-aos="fade-down" data-aos-duration="2500">
                 <h1 className='font-bold text-center text-white text-3xl kbira'>
                     PROJECTS
                 </h1>
-                <div className='w-[100%] flex flex-wrap justify-center items-center'>
-                {
-                    arrayi.map(element =>
-                        
-                        <div className='cards  w-[25%] h-[100%] flex flex-wrap justify-around'>
+                <div className='w-[100%]  flex flex-wrap justify-center items-center'>
+                    {
+                        arrayi.map(element =>
+
+                            <div className='cards relative  w-[25%] h-[100%] flex flex-wrap justify-around'>
                                 <div class="max-w-sm shadow-lg shadow-white bg-[#101630] rounded-lg  dark:bg-gray-800 dark:border-gray-700">
                                     <img class="rounded-t-lg" src={element.picture} alt="" className='  ' />
-                                    <div class="p-5">
+                                    <div class="p-5 flex flex-col justify-between ">
                                         <a href="#">
-                                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{element.title}</h5>
+                                            <h5 class="mb-2 text-2xl font-bold text-white tracking-tight  dark:text-white">{element.title}</h5>
                                         </a>
-                                        <p class="mb-3 font-normal text-white  dark:text-gray-400">{element.description}</p>
-                                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                            Read more
-                                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                            </svg>
-                                        </a>
+                                        <p class="font-normal text-white mb-11 dark:text-gray-400">{element.description}</p>
+                                        <div className='bg-black absolute bottom-3 '>
+                                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                                Read more
+                                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                                </svg>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            
-                        </div>
-                            )
-                }
+
+                            </div>
+                        )
+                    }
                 </div>
 
 
             </div>
-            <div data-aos="fade-up" data-aos-duration="2500" className='skills  w-[100%] bg-[#101630] h-[50vh]   flex flex-col justify-center items-center'>
+            <div data-aos="fade-left" data-aos-duration="2500" className='skills  w-[100%]  bg-[#101630] h-[50vh]   flex flex-col justify-center items-center'>
                 <h1 className='font-bold text-center text-white kbira text-3xl'>Skills</h1>
                 <div className='icons flex flex-wrap justify-around items-center gap-10 h-[80%]'>
-                    { skill.map(skyll=>
-                    <div className='flex flex-col justify-center items-center'>
-                    <img src={skyll.picture} alt="" className='w-[170px] p-10' />
-                    <h2 className='kbira 2xl text-white'>{skyll.title}</h2>
-                    </div>
+                    {skill.map(skyll =>
+                        <div className='flex flex-col justify-center items-center'>
+                            <img src={skyll.picture} alt="" className='w-[170px] p-10' />
+                            <h2 className='kbira 2xl text-white'>{skyll.title}</h2>
+                        </div>
                     )
                     }
 
                 </div>
             </div>
-            <div className='bg-[#101630] w-[100%]'>
-            <div className='rounded-t-[200px] contact w-[100%] bg-gradient-to-r from-[#4733bccb] from-10% via-sky-500 via-30% to-[#4f97d6bb] to-90% h-[70vh]  flex flex-col justify-center items-center '>
-                <h1 className='text-2xl text-white kbira'>
-                    Contact
-                </h1>
-                <div className='w-[50%] h-[80%] flex justify-center items-center'>
-                    <div className='drop-message flex flex-col gap-7'>
-                        <h1 className='kbira text-2xl text-white'>Drop a message</h1>
-                        <p className='w-[60%] '>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, distinctio. Ex beatae quaerat voluptates impedit facere. Velit veritatis dolore accusamus!
-                        </p>
-                        <div className='tele flex justify-center items-center w-[60%]'>
-                            <FaSquarePhone />
-                            <p>
-                                +212699312362
+            <div className='bg-[#101630] '>
+                <div className='rounded-t-[200px] contact w-[100%] bg-gradient-to-r from-[#4733bccb] from-10% via-sky-500 via-30% to-[#4f97d6bb] to-90% h-[70vh]  flex flex-col justify-center items-center '>
+                    <h1 className='text-2xl text-white kbira'>
+                        Contact
+                    </h1>
+                    <div className='w-[50%] h-[80%] flex justify-start items-center'>
+                        <div className='drop-message flex flex-col gap-7 justify-start items-start'>
+                            <h1 className='kbira text-2xl text-white'>Drop a message</h1>
+                            <p className='w-[60%]'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, distinctio. Ex beatae quaerat voluptates impedit facere. Velit veritatis dolore accusamus!
                             </p>
+                            <div className='tele flex justify-start items-center w-[60%] gap-6'>
+                                <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[50px] h-[50px] rounded-lg flex justify-center items-center'>
+                                    <FaSquarePhone />
+                                </div>
+                                <p>
+                                    +212699312362
+                                </p>
+                            </div>
+                            <div className='message flex justify-start items-center w-[60%] gap-6'>
+                                <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[50px] h-[50px] rounded-lg flex justify-center items-center'>
+                                    <BiSolidMessageDetail />
+                                </div>
+                                <p>
+                                    zakaria.eldahar@gmail.com
+                                </p>
+                            </div>
+                            <div className='local flex justify-start items-center w-[60%] gap-6 '>
+                                <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[80px] h-[50px] rounded-lg flex justify-center items-center'>
+                                    <FaLocationDot />
+                                </div>
+                                <p>
+                                    Morocco,Casablanca,Sidi moumen Boulvard houssein soussi, Rue 29
+                                </p>
+                            </div>
                         </div>
-                        <div className='message flex justify-center items-center w-[60%]'>
-                            <BiSolidMessageDetail />
-                            <p>
-                                zakaria.eldahar@gmail.com
-                            </p>
-                        </div>
-                        <div className='local flex justify-center items-center w-[60%]'>
-                            <FaLocationDot className='' />
-                            <p>
-                                Morocco,Casablanca,Sidi moumen Boulvard houssein soussi, Rue 29
-                            </p>
-                        </div>
-                    </div>
-                    <div className='form'>
-                        <form action="">
-                            <input type="text" placeholder='Name' />
-                            <input type="email" placeholder='Email' />
-                            <textarea name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
-                            <button>SEND</button>
-                        </form>
-                    </div>
-                </div>
-                <hr />
+                        <div class="max-w-md p-8 bg-gray-800 rounded-md shadow-md form-container w-[70%]">
+                            <h2 class="text-2xl font-semibold text-white mb-6">Say Something!</h2>
+                            <form className='overflow-x-hidden' action="https://fabform.io/f/insert-form-id" method="POST">
+                                <div class="mb-4">
+                                    <label for="name" class="block text-gray-300 text-sm font-bold mb-2">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required
+                                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white" />
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-300 text-sm font-bold mb-2">Your Email</label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required
+                                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white" />
+                                </div>
+                                <div class="mb-6">
+                                    <label for="message" class="block text-gray-300 text-sm font-bold mb-2">Your Message</label>
+                                    <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required
+                                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white"></textarea>
+                                </div>
+                                <button type="submit"
+                                    class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
+                                    Send Message
+                                </button>
 
-            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <hr />
+
+                </div>
             </div>
         </>
     );
