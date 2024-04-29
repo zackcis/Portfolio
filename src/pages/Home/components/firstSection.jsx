@@ -104,7 +104,7 @@ export const FirstSection = () => {
                     </div>
                 </div>
             </nav>
-            <div smooth={true} duration={500} className='cursor-pointer' name="Home" data-aos="fade-right" data-aos-duration="2500" className='bg-[#101630] w-[100%] h-screen flex justify-center items-center '>
+            <div  name="Home" data-aos="fade-right" data-aos-duration="2500" className='bg-[#101630] w-[100%] h-screen flex justify-center items-center '>
                 <div className='w-[100%] h-[70%] flex flex-col justify-around items-center'>
                     <p className=' w-[50%] text-start text-5xl text-gray-500 '>
                         <span className='font-bold leading-[100px]  '>I'm a</span><br /> <span className='text-white kbira  text-7xl'>Full-Stack Software Developer .</span>
