@@ -34,7 +34,7 @@ export const FirstSection = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-    
+
         emailjs
             .sendForm('service_6cax8u7', 'template_z5idg8v', form.current, {
                 publicKey: '68pQe024jghocpcCR',
@@ -235,7 +235,7 @@ export const FirstSection = () => {
                         <div className='drop-message flex flex-col gap-7 justify-start items-start max-[430px]:justify-center max-[430px]:items-center'>
                             <h1 className='kbira text-2xl text-white max-[430px]:text-center'>Drop a message</h1>
                             <p className='w-[60%] max-[430px]:text-center'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, distinctio. Ex beatae quaerat voluptates impedit facere. Velit veritatis dolore accusamus!
+                                I'm always open to new opportunities, collaborations, and discussions. Whether you have a project idea, want to explore potential partnerships, or just want to say hello, feel free to reach out. I look forward to connecting with you!
                             </p>
                             <div className='tele flex justify-start items-center w-[60%] gap-6 max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center'>
                                 <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[50px] h-[50px] rounded-lg flex justify-center items-center'>
@@ -281,7 +281,7 @@ export const FirstSection = () => {
                                         class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white" onChange={(e) => setMessage(e.target.value)}></textarea>
                                 </div>
 
-                                <button type="submit" value="send" 
+                                <button type="submit" value="send"
                                     class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
                                     Send Message
                                 </button>
