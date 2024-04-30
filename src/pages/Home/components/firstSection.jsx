@@ -164,7 +164,7 @@ export const FirstSection = () => {
                         <div className='about-script flex flex-col justify-around items-center text-center h-[60%] max-[430px]:w-[100%] '>
                             <h1 className='kbira text-white text-3xl'>About</h1>
                             <p className='w-[70%] text-2xl text-white '>
-                                Front End Web Developer passionate about software development and crafting engaging user experiences. Demonstrated expertise in client interaction and project management honed through freelancing endeavors. Committed to advancing front-end skills and staying abreast of emerging technologies to deliver exceptional digital solutions.
+                                Full-Stack Developer passionate about software development and crafting engaging user experiences. Demonstrated expertise in client interaction and project management honed through freelancing endeavors. Committed to advancing front-end skills and staying abreast of emerging technologies to deliver exceptional digital solutions.
                             </p>
                         </div>
                     </div>
