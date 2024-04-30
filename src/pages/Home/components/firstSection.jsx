@@ -42,16 +42,21 @@ export const FirstSection = () => {
             .then(
                 () => {
                     // Clear input fields after successful submission
-                    setName('');
-                    setEmail('');
-                    setMessage('');
                     console.log('SUCCESS!');
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
                 },
-            );
+            )
+        setName('');
+        setEmail('');
+        setMessage('');
     };
+    const khwiInput = () => {
+        setName('');
+        setEmail('');
+        setMessage('');
+    }
     // const [test, setTest] = useContext(MyContext)
     const [skill, setSkill] = useState([
         {
@@ -263,24 +268,24 @@ export const FirstSection = () => {
                         </div>
                         <div class="max-w-md p-8 bg-gray-800 rounded-md shadow-md form-container w-[70%] max-[430px]:w-[90%]">
                             <h2 class="text-2xl font-semibold text-white mb-6">Say Something!</h2>
-                            <form className='overflow-x-hidden' ref={form} onSubmit={sendEmail} >
+                            <form className='overflow-x-hidden' ref={form}  >
                                 <div class="mb-4">
                                     <label for="name" class="block text-gray-300 text-sm font-bold mb-2" >Your Name</label>
-                                    <input type="text" id="name" name="from_name" placeholder="John Doe" required
+                                    <input type="text" id="name" value={name} name="from_name" placeholder="John Doe" required
                                         class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white" onChange={(e) => setName(e.target.value)} />
                                 </div>
                                 <div class="mb-4">
                                     <label for="email" class="block text-gray-300 text-sm font-bold mb-2" >Your Email</label>
-                                    <input type="email" id="email" name="from_email" placeholder="john@example.com" required
+                                    <input type="email" id="email" value={email} name="from_email" placeholder="john@example.com" required
                                         class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white" onChange={(e) => setEmail(e.target.value)} />
                                 </div>
                                 <div class="mb-6">
                                     <label for="message" class="block text-gray-300 text-sm font-bold mb-2">Your Message</label>
-                                    <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required
+                                    <textarea id="message" name="message" value={message} rows="4" placeholder="How can we help you?" required
                                         class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white" onChange={(e) => setMessage(e.target.value)}></textarea>
                                 </div>
 
-                                <button type="submit" value="send"
+                                <button onClick={sendEmail} value="send"
                                     class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
                                     Send Message
                                 </button>
