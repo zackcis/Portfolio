@@ -135,7 +135,7 @@ export const FirstSection = () => {
 
 
 
-            <div name="Home" data-aos="fade-right" data-aos-duration="2500" className='bg-[#101630] w-[100%] h-screen flex justify-center items-center max-[430px]:max-w-[100%] max-[430px]:flex-col-reverse max-[430px]:justify-center max-[430px]:items-center'>
+            <div name="Home" data-aos="fade-right" data-aos-duration="2500" className='bg-[#101630] w-[100%] h-screen flex justify-center items-center max-[430px]:max-w-[100%] max-[430px]:flex-col-reverse max-[430px]:justify-center max-[430px]:items-center max-[430px]:h-[120vh]'>
                 <div className='w-[100%] h-[60%] flex flex-col justify-around items-center max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center max-[430px]:text-center'>
                     <p className=' w-[50%] text-start text-5xl text-gray-500 max-[430px]:mb-5  max-[430px]:text-center'>
                         <span className='font-bold leading-[100px]  '>I'm a</span><br /> <span className='text-white kbira  text-7xl max-[430px]:text-3xl '>Full-Stack Software Developer .</span>
