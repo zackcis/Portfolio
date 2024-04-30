@@ -206,7 +206,8 @@ export const FirstSection = () => {
 
 
 
-            <div name="skills" data-aos="fade-left" data-aos-duration="2500" className='skills   w-[100%]  bg-[#101630] h-[50vh] max-[370px]:h-[300vh] max-[430px]:flex-col  max-[430px]:h-[145vh] max-[430px]:p-0 max-[430px]:my-7    flex flex-col justify-center items-center'>
+            <div name="skills" data-aos="fade-left" data-aos-duration="2500" className='skills   w-[100%]  bg-[#101630] h-[50vh] max-[380px]:min-h-full
+            max-[430px]:flex-col  max-[430px]:h-[145vh] max-[430px]:p-0 max-[430px]:my-7    flex flex-col justify-center items-center'>
                 <h1 className='font-bold text-center text-white kbira text-3xl'>Skills</h1>
                 <div className='icons flex flex-wrap justify-around items-center gap-10 h-[80%] '>
                     {skill.map(skyll =>
