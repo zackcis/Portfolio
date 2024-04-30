@@ -10,7 +10,7 @@ import css from '../../../assets/img/css-3.png'
 import js from '../../../assets/img/js.png'
 import react from '../../../assets/img/React-Logo-PNG-Pic.png'
 import boot from '../../../assets/img/bootstrap_icon_195906.png'
-import tailwind from '../../../assets/img/tailwind-512.webp'
+import tailwind from '../../../assets/img/tailwind-512.png'
 import laravel from '../../../assets/img/985px-Laravel.svg.png'
 import crypto from '../../../assets/img/Crypto.png'
 import ecommerce from '../../../assets/img/Ecommerce.png'
@@ -150,7 +150,6 @@ export const FirstSection = () => {
             </div>
 
 
-
             <div name="about" className='about w-[100%]  bg-[#101630] h-[70vh] max-[430px]:h-[140vh] max-[430px]:mb-10  max-[430px]:py-3  flex justify-center items-center' data-aos="fade-left" data-aos-duration="2500">
                 <div className='w-[90%] max-[430px]:w-[100%] h-[100%] flex justify-center items-center '>
                     <div className='w-[80%] max-[430px]:w-[100%] h-[100%] flex justify-between items-center text-center gap-8 max-[430px]:gap-4 max-[380px]:gap-10 max-[430px]:flex-col'>
@@ -169,7 +168,7 @@ export const FirstSection = () => {
 
 
 
-            <div name="project" className='projects w-[100%]  bg-[#101630] h-[70vh] max-[380px]:h-[300vh] max-[430px]:h-[230vh] max-[430px]:my-7  flex flex-col justify-around items-center  ' data-aos="fade-down" data-aos-duration="2500">
+            <div name="project" className='projects w-[100%]  bg-[#101630] h-[70vh] max-[380px]:h-[300vh] max-[430px]:h-[230vh] max-[430px]:my-7  flex flex-col justify-around items-center ' data-aos="fade-down" data-aos-duration="2500">
                 <h1 className='font-bold text-center text-white text-3xl kbira'>
                     PROJECTS
                 </h1>
