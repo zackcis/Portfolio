@@ -151,9 +151,9 @@ export const FirstSection = () => {
 
 
 
-            <div name="about" className='about w-[100%]  bg-[#101630] h-[70vh] max-[430px]:h-[100vh] max-[430px]:mb-10  max-[430px]:py-3  flex justify-center items-center' data-aos="fade-left" data-aos-duration="2500">
+            <div name="about" className='about w-[100%]  bg-[#101630] h-[70vh] max-[430px]:h-[140vh] max-[430px]:mb-10  max-[430px]:py-3  flex justify-center items-center' data-aos="fade-left" data-aos-duration="2500">
                 <div className='w-[90%] max-[430px]:w-[100%] h-[100%] flex justify-center items-center '>
-                    <div className='w-[80%] max-[430px]:w-[100%] h-[100%] flex justify-between items-center text-center gap-8 max-[430px]:flex-col'>
+                    <div className='w-[80%] max-[430px]:w-[100%] h-[100%] flex justify-between items-center text-center gap-8 max-[430px]:gap-10 max-[430px]:flex-col'>
                         <div className='about-image w-[70%] max-[430px]:w-[40%] '>
                             <img src={abouti} className='w-[100%] about-image' alt="" />
                         </div>
@@ -169,7 +169,7 @@ export const FirstSection = () => {
 
 
 
-            <div name="project" className='projects w-[100%]  bg-[#101630] h-[70vh] max-[430px]:h-[230vh]  flex flex-col justify-around items-center  ' data-aos="fade-down" data-aos-duration="2500">
+            <div name="project" className='projects w-[100%]  bg-[#101630] h-[70vh] max-[430px]:h-[300vh] max-[430px]:my-7  flex flex-col justify-around items-center  ' data-aos="fade-down" data-aos-duration="2500">
                 <h1 className='font-bold text-center text-white text-3xl kbira'>
                     PROJECTS
                 </h1>
@@ -206,7 +206,7 @@ export const FirstSection = () => {
 
 
 
-            <div name="skills" data-aos="fade-left" data-aos-duration="2500" className='skills   w-[100%]  bg-[#101630] h-[50vh] max-[430px]:flex-col  max-[430px]:h-[125vh] max-[430px]:p-0     flex flex-col justify-center items-center'>
+            <div name="skills" data-aos="fade-left" data-aos-duration="2500" className='skills   w-[100%]  bg-[#101630] h-[50vh] max-[430px]:flex-col  max-[430px]:h-[145vh] max-[430px]:p-0 max-[430px]:my-7    flex flex-col justify-center items-center'>
                 <h1 className='font-bold text-center text-white kbira text-3xl'>Skills</h1>
                 <div className='icons flex flex-wrap justify-around items-center gap-10 h-[80%] '>
                     {skill.map(skyll =>
