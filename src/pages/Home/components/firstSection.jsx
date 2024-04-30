@@ -153,7 +153,7 @@ export const FirstSection = () => {
 
             <div name="about" className='about w-[100%]  bg-[#101630] h-[70vh] max-[430px]:h-[140vh] max-[430px]:mb-10  max-[430px]:py-3  flex justify-center items-center' data-aos="fade-left" data-aos-duration="2500">
                 <div className='w-[90%] max-[430px]:w-[100%] h-[100%] flex justify-center items-center '>
-                    <div className='w-[80%] max-[430px]:w-[100%] h-[100%] flex justify-between items-center text-center gap-8 max-[430px]:gap-10 max-[430px]:flex-col'>
+                    <div className='w-[80%] max-[430px]:w-[100%] h-[100%] flex justify-between items-center text-center gap-8 max-[430px]:gap-4 max-[380px]:gap-10 max-[430px]:flex-col'>
                         <div className='about-image w-[70%] max-[430px]:w-[40%] '>
                             <img src={abouti} className='w-[100%] about-image' alt="" />
                         </div>
