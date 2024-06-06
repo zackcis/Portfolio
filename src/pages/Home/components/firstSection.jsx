@@ -97,13 +97,13 @@ export const FirstSection = () => {
     {
         picture: crypto,
         title: 'Crypto currency project',
-        description: 'This endeavor explores the intersection of technology and finance, presenting a dynamic solution that empowers users to navigate the world of digital assets with ease. From blockchain innovation to secure transactions, this project reflects a commitment to redefining the landscape of decentralized finance',
+        description: 'This endeavor explores the intersection of technology and finance, presenting a dynamic solution that empowers users to navigate the world of digital assets with ease. From blockchain innovation to secure transactions, ',
         link: '',
     },
     {
         picture: movies,
         title: 'Movies project',
-        description: 'where passion for storytelling meets technological innovation. This endeavor seamlessly integrates design and functionality to create an immersive platform for movie enthusiasts. Discover a user-friendly interface, curated content, and an engaging viewing experience',
+        description: 'where passion for storytelling meets technological innovation. This endeavor seamlessly integrates design and functionality to create an immersive platform for movie enthusiasts. Discover a user-friendly interface',
         link: '',
     }])
 
@@ -117,7 +117,7 @@ export const FirstSection = () => {
             <nav class="bg-[#101630] w-[100%]  flex justify-center items-center pt-[5vh] ">
                 <div class="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto ">
                     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                             <li className='cursor-pointer'>
                                 <Link smooth={true} duration={500} to="Home" class="block py-2 px-8 text-white hover:text-[#1ed760] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ">Home</Link>
                             </li>
@@ -141,29 +141,31 @@ export const FirstSection = () => {
 
 
             <div name="Home" data-aos="fade-right" data-aos-duration="2500" className='bg-[#101630] w-[100%] h-screen flex justify-center items-center max-[430px]:max-w-[100%] max-[430px]:flex-col-reverse max-[430px]:justify-center max-[430px]:items-center max-[430px]:h-[120vh]'>
-                <div className='w-[100%] h-[60%] flex flex-col justify-around items-center max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center max-[430px]:text-center'>
-                    <p className=' w-[50%] text-start text-5xl text-gray-500 max-[430px]:mb-5  max-[430px]:text-center'>
+                <div className='w-full flex flex-col justify-around items-center max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center max-[430px]:text-center'>
+                    <p className=' w-[60%] text-start text-5xl text-gray-500 max-[430px]:mb-5  max-[430px]:text-center'>
                         <span className='font-bold leading-[100px]  '>I'm a</span><br /> <span className='text-white kbira  text-7xl max-[430px]:text-3xl '>Full-Stack Software Developer .</span>
                     </p>
-                    <div className='w-[50%] flex justify-start max-[430px]:justify-center'>
+                    <div className=' w-[60%] flex justify-start items-center max-[430px]:justify-center pt-3'>
                         <button className='items-start p-[30px] rounded-full bg-gradient-to-r from-[#49b0d8] from-10% via-sky-500 via-30% to-[#3a2c8f] to-90% text-white font-bold '><Link smooth={true} duration={500} to="project" >Previous Project</Link></button>
                     </div>
                 </div>
-                <div className=' w-[50%]'>
+                <div className=' w-[60%] '>
                     <img src={ana} alt="" className='w-[350px] imagi ' />
                 </div>
             </div>
 
 
-            <div name="about" className='about w-[100%]  bg-[#101630] h-[70vh] max-[430px]:h-[140vh] max-[430px]:mb-10  max-[430px]:py-3  flex justify-center items-center' data-aos="fade-left" data-aos-duration="2500">
-                <div className='w-[90%] max-[430px]:w-[100%] h-[100%] flex justify-center items-center '>
+            <div name="about" className='mb-5 about w-full  bg-[#101630]  max-[430px]:h-[140vh] max-[430px]:mb-10  max-[430px]:py-3  flex justify-center items-center' data-aos="fade-left" data-aos-duration="2500">
+                <div className='w-full max-[430px]:w-[100%] h-[100%] flex justify-center items-center '>
                     <div className='w-[80%] max-[430px]:w-[100%] h-[100%] flex justify-between items-center text-center gap-8 max-[430px]:gap-4 max-[380px]:gap-10 max-[430px]:flex-col'>
-                        <div className='about-image w-[70%] max-[430px]:w-[40%] '>
-                            <img src={abouti} className='w-[100%] about-image' alt="" />
+                        <div className='about-image w-fit max-[430px]:w-[40%] flex justify-center '>
+                            <img src={abouti} className='w-full about-image' alt="" />
                         </div>
-                        <div className='about-script flex flex-col justify-around items-center text-center h-[60%] max-[430px]:w-[100%] '>
-                            <h1 className='kbira text-white text-3xl'>About</h1>
-                            <p className='w-[70%] text-2xl text-white '>
+                        <div className='  about-script  flex flex-col justify-around items-end text-center h-[60%] max-[430px]:w-[100%] '>
+                            <div className='w-[60%] text-center flex items-center justify-center'>
+                            <h1 className='kbira text-white text-3xl '>About</h1>
+                            </div>
+                            <p className=' w-[60%] text-2xl text-white '>
                                 Full-Stack Developer passionate about software development and crafting engaging user experiences. Demonstrated expertise in client interaction and project management honed through freelancing endeavors. Committed to advancing front-end skills and staying abreast of emerging technologies to deliver exceptional digital solutions.
                             </p>
                         </div>
@@ -173,22 +175,22 @@ export const FirstSection = () => {
 
 
 
-            <div name="project" className='projects w-[100%]  bg-[#101630] h-[70vh] max-[380px]:h-[300vh] max-[430px]:h-[230vh] max-[430px]:my-7  flex flex-col justify-around items-center ' data-aos="fade-down" data-aos-duration="2500">
+            <div name="project" className='projects mb-5 w-full bg-[#101630]  max-[380px]:h-[300vh] max-[430px]:h-[230vh] max-[430px]:my-7  flex flex-col justify-around items-center ' data-aos="fade-down" data-aos-duration="2500">
                 <h1 className='font-bold text-center text-white text-3xl kbira'>
                     PROJECTS
                 </h1>
-                <div className='w-[100%] flex flex-wrap justify-center items-center max-[430px]:flex-col max-[430px]:h-[98%]  max-[430px]:gap-[80px] gap-9'>
+                <div className='w-full flex flex-wrap justify-center items-center max-[430px]:flex-col max-[430px]:h-[98%]  max-[430px]:gap-[80px] gap-6'>
                     {
                         arrayi.map(element =>
 
-                            <div className='cards relative  w-[25%] h-[100%] max-[430px]:h-[27%] flex flex-wrap justify-around  max-[430px]:w-[100%] '>
+                            <div className='cards relative  w-[30%] max-[430px]:h-[27%] flex flex-wrap justify-around  max-[430px]:w-[100%] '>
                                 <div class="max-w-sm shadow-lg shadow-white bg-[#101630] rounded-lg  dark:bg-gray-800 dark:border-gray-700">
                                     <img class="rounded-t-lg" src={element.picture} alt="" className='  ' />
                                     <div class="p-5 flex flex-col justify-between ">
                                         <a href="#">
                                             <h5 class="mb-2 text-2xl font-bold text-white tracking-tight  dark:text-white">{element.title}</h5>
                                         </a>
-                                        <p class="font-normal text-white mb-11 dark:text-gray-400">{element.description}</p>
+                                        <p class="font-normal text-white mb-6 dark:text-gray-400 w-full">{element.description}</p>
                                         <div className='bg-black absolute bottom-3 '>
                                             <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                                 Read more
@@ -210,7 +212,7 @@ export const FirstSection = () => {
 
 
 
-            <div name="skills" data-aos="fade-left" data-aos-duration="2500" className='skills   w-[100%]  bg-[#101630] h-[50vh] max-[380px]:min-h-full
+            <div name="skills" data-aos="fade-left" data-aos-duration="2500" className='skills my-4  w-full bg-[#101630] max-[380px]:min-h-full
             max-[430px]:flex-col  max-[430px]:h-[145vh] max-[430px]:p-0 max-[430px]:my-7    flex flex-col justify-center items-center'>
                 <h1 className='font-bold text-center text-white kbira text-3xl'>Skills</h1>
                 <div className='icons flex flex-wrap justify-around items-center gap-10 h-[80%] '>
@@ -230,8 +232,7 @@ export const FirstSection = () => {
 
 
             <div name="contact" className='bg-[#101630] '>
-                <div className='rounded-t-[200px] contact w-[100%] bg-gradient-to-r from-[#4733bccb] from-10% via-sky-500 via-30% to-[#4f97d6bb] to-90% h-[70vh]  flex flex-col justify-center items-center max-[430px]:h-[180vh]
-                '>
+                <div className='rounded-t-[200px] contact w-[100%] bg-gradient-to-r from-[#4733bccb] from-10% via-sky-500 via-30% to-[#4f97d6bb] to-90% h-[70vh]  flex flex-col justify-center items-center max-[430px]:h-[180vh]'>
                     <h1 className='text-2xl text-white kbira max-[430px]:text-center'>
                         Contact
                     </h1>
