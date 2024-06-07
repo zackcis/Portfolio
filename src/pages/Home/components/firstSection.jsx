@@ -232,18 +232,19 @@ export const FirstSection = () => {
 
 
             <div name="contact" className='bg-[#101630] '>
-                <div className='rounded-t-[200px] contact w-[100%] bg-gradient-to-r from-[#4733bccb] from-10% via-sky-500 via-30% to-[#4f97d6bb] to-90% h-[70vh]  flex flex-col justify-center items-center max-[430px]:h-[180vh]'>
-                    <h1 className='text-2xl text-white kbira max-[430px]:text-center'>
+                <div className='rounded-t-[200px] contact w-[100%] bg-gradient-to-r from-[#4733bccb] from-10% via-sky-500 via-30% to-[#4f97d6bb] to-90%   flex flex-col justify-center items-center max-[430px]:h-[180vh]'>
+                    <h1 className='text-2xl text-white kbira max-[430px]:text-center mt-4'>
                         Contact
                     </h1>
-                    <div className='w-[50%] max-[430px]:w-[100%] h-[80%] flex justify-start items-center max-[430px]:flex-col  max-[430px]:items-center max-[430px]:gap-[100px]  max-[430px]:justify-center'>
-                        <div className='drop-message flex flex-col gap-7 justify-start items-start max-[430px]:justify-center max-[430px]:items-center'>
-                            <h1 className='kbira text-2xl text-white max-[430px]:text-center'>Drop a message</h1>
-                            <p className='w-[60%] max-[430px]:text-center'>
+                   <div className='flex w-full justify-center items-center'>
+                   <div className='w-[50%] max-[430px]:w-[100%]   flex justify-start items-center max-[430px]:flex-col  max-[430px]:items-center max-[430px]:gap-[100px]  max-[430px]:justify-center'>
+                        <div className=' drop-message m-3 flex flex-col gap-7 justify-center h-[60%]  w-[60%]  items-start max-[430px]:justify-center max-[430px]:items-center'>
+                            <h1 className='w-full text-center kbira text-2xl text-white max-[430px]:text-center'>Drop a message</h1>
+                            <p className='w-full max-[430px]:text-center'>
                                 I'm always open to new opportunities, collaborations, and discussions. Whether you have a project idea, want to explore potential partnerships, or just want to say hello, feel free to reach out. I look forward to connecting with you!
                             </p>
                             <div className='tele flex justify-start items-center w-[60%] gap-6 max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center'>
-                                <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[50px] h-[50px] rounded-lg flex justify-center items-center'>
+                                <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[40px] h-[40px] rounded-lg flex justify-center items-center'>
                                     <FaSquarePhone />
                                 </div>
                                 <p>
@@ -251,7 +252,7 @@ export const FirstSection = () => {
                                 </p>
                             </div>
                             <div className='message flex justify-start items-center w-[60%] gap-6 max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center'>
-                                <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[50px] h-[50px] rounded-lg flex justify-center items-center'>
+                                <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[40px] h-[40px] rounded-lg flex justify-center items-center'>
                                     <BiSolidMessageDetail />
                                 </div>
                                 <p>
@@ -259,7 +260,7 @@ export const FirstSection = () => {
                                 </p>
                             </div>
                             <div className='local flex justify-start items-center w-[60%] gap-6 max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center '>
-                                <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[80px] h-[50px] rounded-lg flex justify-center items-center'>
+                                <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[80px] h-[40px] rounded-lg flex justify-center items-center'>
                                     <FaLocationDot />
                                 </div>
                                 <p className='max-[430px]:text-center'>
@@ -267,21 +268,19 @@ export const FirstSection = () => {
                                 </p>
                             </div>
                         </div>
-                        <div class="max-w-md p-8 bg-gray-800 rounded-md shadow-md form-container w-[70%] max-[430px]:w-[90%]">
-                            <h2 class="text-2xl font-semibold text-white mb-6">Say Something!</h2>
-                            <form className='overflow-x-hidden' ref={form}  >
-                                <div class="mb-4">
-                                    <label for="name" class="block text-gray-300 text-sm font-bold mb-2" >Your Name</label>
-                                    <input type="text" id="name" value={name} name="from_name" placeholder="John Doe" required
-                                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white" onChange={(e) => setName(e.target.value)} />
+                       
+                    </div>
+                    <div class="p-2   bg-gray-800 rounded-md shadow-md h-full   w-[30%] max-[430px]:w-[90%] flex flex-col justify-center items-center">
+                            <h2 class="text-2xl font-semibold text-white mb-3 text-center">Say Something!</h2>
+                            <form className='overflow-x-hidden h-[80%] flex flex-col justify-center items-center' ref={form}  >
+                                <div class="mb-2">
+                                    
                                 </div>
-                                <div class="mb-4">
-                                    <label for="email" class="block text-gray-300 text-sm font-bold mb-2" >Your Email</label>
+                                <div class="mb-2">
                                     <input type="email" id="email" value={email} name="from_email" placeholder="john@example.com" required
                                         class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white" onChange={(e) => setEmail(e.target.value)} />
                                 </div>
                                 <div class="mb-6">
-                                    <label for="message" class="block text-gray-300 text-sm font-bold mb-2">Your Message</label>
                                     <textarea id="message" name="message" value={message} rows="4" placeholder="How can we help you?" required
                                         class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-gray-700 text-white" onChange={(e) => setMessage(e.target.value)}></textarea>
                                 </div>
@@ -292,7 +291,7 @@ export const FirstSection = () => {
                                 </button>
                             </form>
                         </div>
-                    </div>
+                   </div>
                     <hr />
 
                 </div>
