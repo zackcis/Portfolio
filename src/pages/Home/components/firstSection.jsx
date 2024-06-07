@@ -142,7 +142,7 @@ export const FirstSection = () => {
 
             <div name="Home" data-aos="fade-right" data-aos-duration="2500" className='bg-[#101630] w-[100%] h-screen flex justify-center items-center max-[430px]: max-[430px]:flex-col-reverse max-[430px]:justify-center max-[430px]:items-center max-[430px]:h-[120vh]'>
                 <div className='w-full flex flex-col justify-around items-center max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center max-[430px]:text-center '>
-                    <p className=' w-[60%] text-start text-5xl text-gray-500 max-[430px]:mb-5  max-[430px]:text-center max-[430px]:w-[50%] max-[430px]:flex max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center max-[430px]:gap-0'>
+                    <p className=' w-[60%] text-start text-5xl text-gray-500 max-[430px]:mb-5  max-[430px]:text-center max-[430px]:w-[60%] max-[430px]:flex max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center max-[430px]:gap-0 max-[320px]:w-[80%]'>
                         <span className='font-bold leading-[100px] max-[430px]:text-center max-[430px]:m-0 max-[430px]:leading-none '>I'm a</span><br /> <span className='text-white kbira  text-7xl max-[430px]:text-3xl max-[430px]:text-center'>Full-Stack Software Developer .</span>
                     </p>
                     <div className=' w-[60%] flex justify-start items-center max-[430px]:justify-center max-[430px]:items-center pt-3'>
@@ -161,9 +161,9 @@ export const FirstSection = () => {
                         <div className='about-image w-fit max-[430px]:w-[40%] flex justify-center '>
                             <img src={abouti} className='w-full about-image' alt="" />
                         </div>
-                        <div className='  about-script  flex flex-col justify-around items-end text-center h-[60%] max-[430px]:w-[100%] '>
-                            <div className='w-full text-center flex items-center justify-center '>
-                                <h1 className='kbira text-white text-3xl max-[430px]:text-center'>About</h1>
+                        <div className='  about-script  flex flex-col justify-around items-end text-center  max-[430px]:w-[100%] '>
+                            <div className='w-[60%] text-center flex items-center justify-center max-[430px]:w-full '>
+                                <h1 className='kbira text-white text-3xl max-[430px]:text-center w-[60%] '>About</h1>
                             </div>
                             <p className=' w-[60%] text-2xl text-white  max-[430px]:w-full max-[430px]:px-1  '>
                                 Full-Stack Developer passionate about software development and crafting engaging user experiences. Demonstrated expertise in client interaction and project management honed through freelancing endeavors. Committed to advancing front-end skills and staying abreast of emerging technologies to deliver exceptional digital solutions.
