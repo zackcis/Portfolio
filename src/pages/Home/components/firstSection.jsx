@@ -140,12 +140,12 @@ export const FirstSection = () => {
 
 
 
-            <div name="Home" data-aos="fade-right" data-aos-duration="2500" className='bg-[#101630] w-[100%] h-screen flex justify-center items-center max-[430px]:max-w-[100%] max-[430px]:flex-col-reverse max-[430px]:justify-center max-[430px]:items-center max-[430px]:h-[120vh]'>
-                <div className='w-full flex flex-col justify-around items-center max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center max-[430px]:text-center'>
-                    <p className=' w-[60%] text-start text-5xl text-gray-500 max-[430px]:mb-5  max-[430px]:text-center'>
-                        <span className='font-bold leading-[100px]  '>I'm a</span><br /> <span className='text-white kbira  text-7xl max-[430px]:text-3xl '>Full-Stack Software Developer .</span>
+            <div name="Home" data-aos="fade-right" data-aos-duration="2500" className='bg-[#101630] w-[100%] h-screen flex justify-center items-center max-[430px]: max-[430px]:flex-col-reverse max-[430px]:justify-center max-[430px]:items-center max-[430px]:h-[120vh]'>
+                <div className='w-full flex flex-col justify-around items-center max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center max-[430px]:text-center '>
+                    <p className=' w-[60%] text-start text-5xl text-gray-500 max-[430px]:mb-5  max-[430px]:text-center max-[430px]:w-[50%] max-[430px]:flex max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center max-[430px]:gap-0'>
+                        <span className='font-bold leading-[100px] max-[430px]:text-center max-[430px]:m-0 max-[430px]:leading-none '>I'm a</span><br /> <span className='text-white kbira  text-7xl max-[430px]:text-3xl max-[430px]:text-center'>Full-Stack Software Developer .</span>
                     </p>
-                    <div className=' w-[60%] flex justify-start items-center max-[430px]:justify-center pt-3'>
+                    <div className=' w-[60%] flex justify-start items-center max-[430px]:justify-center max-[430px]:items-center pt-3'>
                         <button className='items-start p-[30px] rounded-full bg-gradient-to-r from-[#49b0d8] from-10% via-sky-500 via-30% to-[#3a2c8f] to-90% text-white font-bold '><Link smooth={true} duration={500} to="project" >Previous Project</Link></button>
                     </div>
                 </div>
@@ -162,10 +162,10 @@ export const FirstSection = () => {
                             <img src={abouti} className='w-full about-image' alt="" />
                         </div>
                         <div className='  about-script  flex flex-col justify-around items-end text-center h-[60%] max-[430px]:w-[100%] '>
-                            <div className='w-[60%] text-center flex items-center justify-center'>
-                            <h1 className='kbira text-white text-3xl '>About</h1>
+                            <div className='w-full text-center flex items-center justify-center '>
+                                <h1 className='kbira text-white text-3xl max-[430px]:text-center'>About</h1>
                             </div>
-                            <p className=' w-[60%] text-2xl text-white '>
+                            <p className=' w-[60%] text-2xl text-white  max-[430px]:w-full max-[430px]:px-1  '>
                                 Full-Stack Developer passionate about software development and crafting engaging user experiences. Demonstrated expertise in client interaction and project management honed through freelancing endeavors. Committed to advancing front-end skills and staying abreast of emerging technologies to deliver exceptional digital solutions.
                             </p>
                         </div>
@@ -175,11 +175,11 @@ export const FirstSection = () => {
 
 
 
-            <div name="project" className='projects mb-5 w-full bg-[#101630]  max-[380px]:h-[300vh] max-[430px]:h-[230vh] max-[430px]:my-7  flex flex-col justify-around items-center ' data-aos="fade-down" data-aos-duration="2500">
+            <div name="project" className='projects mb-5 w-full bg-[#101630]    max-[430px]:my-7  flex flex-col justify-around items-center ' data-aos="fade-down" data-aos-duration="2500">
                 <h1 className='font-bold text-center text-white text-3xl kbira mb-4'>
                     PROJECTS
                 </h1>
-                <div className='w-full flex flex-wrap justify-center items-center max-[430px]:flex-col max-[430px]:h-[98%]  max-[430px]:gap-[80px] gap-6'>
+                <div className='w-full flex flex-wrap justify-center items-center max-[430px]:flex-col   max-[430px]:gap-[80px] gap-6'>
                     {
                         arrayi.map(element =>
 
@@ -191,7 +191,7 @@ export const FirstSection = () => {
                                             <h5 class="mb-2 text-2xl font-bold text-white tracking-tight  dark:text-white">{element.title}</h5>
                                         </a>
                                         <p class="font-normal text-white mb-6 dark:text-gray-400 w-full">{element.description}</p>
-                                        <div className='bg-black absolute bottom-3 '>
+                                        <div className=' absolute bottom-3 '>
                                             <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                                 Read more
                                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -212,8 +212,8 @@ export const FirstSection = () => {
 
 
 
-            <div name="skills" data-aos="fade-left" data-aos-duration="2500" className='skills my-4  w-full bg-[#101630] max-[380px]:min-h-full
-            max-[430px]:flex-col  max-[430px]:h-[145vh] max-[430px]:p-0 max-[430px]:my-7    flex flex-col justify-center items-center'>
+            <div name="skills" data-aos="fade-left" data-aos-duration="2500" className='skills my-4  w-full bg-[#101630] 
+            max-[430px]:flex-col  max-[430px]:p-2     flex flex-col justify-center items-center'>
                 <h1 className='font-bold text-center text-white kbira text-3xl'>Skills</h1>
                 <div className='icons flex flex-wrap justify-around items-center gap-10 h-[80%] '>
                     {skill.map(skyll =>
@@ -232,49 +232,49 @@ export const FirstSection = () => {
 
 
             <div name="contact" className='bg-[#101630] '>
-                <div className='rounded-t-[200px] contact w-[100%] bg-gradient-to-r from-[#4733bccb] from-10% via-sky-500 via-30% to-[#4f97d6bb] to-90%   flex flex-col justify-center items-center max-[430px]:h-[180vh]'>
+                <div className='rounded-t-[200px] contact w-[100%] bg-gradient-to-r from-[#4733bccb] from-10% via-sky-500 via-30% to-[#4f97d6bb] to-90%   flex flex-col justify-center items-center '>
                     <h1 className='text-2xl text-white kbira max-[430px]:text-center mt-4'>
                         Contact
                     </h1>
-                   <div className='flex w-full justify-center items-center'>
-                   <div className='w-[50%] max-[430px]:w-[100%]   flex justify-start items-center max-[430px]:flex-col  max-[430px]:items-center max-[430px]:gap-[100px]  max-[430px]:justify-center'>
-                        <div className=' drop-message m-3 flex flex-col gap-7 justify-center h-[60%]  w-[60%]  items-start max-[430px]:justify-center max-[430px]:items-center'>
-                            <h1 className='w-full text-center kbira text-2xl text-white max-[430px]:text-center'>Drop a message</h1>
-                            <p className='w-full max-[430px]:text-center'>
-                                I'm always open to new opportunities, collaborations, and discussions. Whether you have a project idea, want to explore potential partnerships, or just want to say hello, feel free to reach out. I look forward to connecting with you!
-                            </p>
-                            <div className='tele flex justify-start items-center w-[60%] gap-6 max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center'>
-                                <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[40px] h-[40px] rounded-lg flex justify-center items-center'>
-                                    <FaSquarePhone />
-                                </div>
-                                <p>
-                                    +212699312362
+                    <div className='flex w-full justify-center items-center max-[430px]:flex-col max-[430px]:'>
+                        <div className='w-[90%] max-[430px]:w-[100%]   flex justify-start items-center max-[430px]:flex-col  max-[430px]:items-center max-[430px]:gap-[100px]  max-[430px]:justify-center'>
+                            <div className=' drop-message m-3 flex flex-col gap-7 justify-center     w-[80%]  items-start max-[430px]:justify-center max-[430px]:items-center'>
+                                <h1 className='w-full text-center kbira text-2xl text-white max-[430px]:text-center'>Drop a message</h1>
+                                <p className='w-full max-[430px]:text-center'>
+                                    I'm always open to new opportunities, collaborations, and discussions. Whether you have a project idea, want to explore potential partnerships, or just want to say hello, feel free to reach out. I look forward to connecting with you!
                                 </p>
-                            </div>
-                            <div className='message flex justify-start items-center w-[60%] gap-6 max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center'>
-                                <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[40px] h-[40px] rounded-lg flex justify-center items-center'>
-                                    <BiSolidMessageDetail />
+                                <div className='tele flex justify-start items-center w-[60%] gap-6 max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center'>
+                                    <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[40px] h-[40px] rounded-lg flex justify-center items-center'>
+                                        <FaSquarePhone />
+                                    </div>
+                                    <p>
+                                        +212699312362
+                                    </p>
                                 </div>
-                                <p>
-                                    zakaria.eldahar@gmail.com
-                                </p>
-                            </div>
-                            <div className='local flex justify-start items-center w-[60%] gap-6 max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center '>
-                                <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[80px] h-[40px] rounded-lg flex justify-center items-center'>
-                                    <FaLocationDot />
+                                <div className='message flex justify-start items-center w-[60%] gap-6 max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center'>
+                                    <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[40px] h-[40px] rounded-lg flex justify-center items-center'>
+                                        <BiSolidMessageDetail />
+                                    </div>
+                                    <p>
+                                        zakaria.eldahar@gmail.com
+                                    </p>
                                 </div>
-                                <p className='max-[430px]:text-center'>
-                                    Morocco,Casablanca,Sidi moumen Boulvard houssein soussi, Rue 29
-                                </p>
+                                <div className='local flex justify-start items-center w-[60%] gap-6 max-[430px]:flex-col max-[430px]:justify-center max-[430px]:items-center '>
+                                    <div className='bg-gradient-to-r from-[#4733bccb] from-10%  via-30% to-[#0ea4e8] to-90% text-white w-[80px] h-[40px] rounded-lg flex justify-center items-center'>
+                                        <FaLocationDot />
+                                    </div>
+                                    <p className='max-[430px]:text-center'>
+                                        Morocco,Casablanca,Sidi moumen Boulvard houssein soussi, Rue 29
+                                    </p>
+                                </div>
                             </div>
+
                         </div>
-                       
-                    </div>
-                    <div class="p-2   bg-gray-800 rounded-md shadow-md h-full   w-[30%] max-[430px]:w-[90%] flex flex-col justify-center items-center">
+                        <div class="p-2  max-[430px]:mb-3 bg-gray-800 rounded-md shadow-md h-full   w-[30%] max-[430px]:w-[90%] flex flex-col justify-center items-center">
                             <h2 class="text-2xl font-semibold text-white mb-3 text-center">Say Something!</h2>
-                            <form className='overflow-x-hidden h-[80%] flex flex-col justify-center items-center' ref={form}  >
+                            <form className='overflow-x-hidden h-[80%] flex flex-col justify-center items-center  ' ref={form}  >
                                 <div class="mb-2">
-                                    
+
                                 </div>
                                 <div class="mb-2">
                                     <input type="email" id="email" value={email} name="from_email" placeholder="john@example.com" required
@@ -291,7 +291,7 @@ export const FirstSection = () => {
                                 </button>
                             </form>
                         </div>
-                   </div>
+                    </div>
                     <hr />
 
                 </div>
