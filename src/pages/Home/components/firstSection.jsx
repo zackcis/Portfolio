@@ -92,19 +92,19 @@ export const FirstSection = () => {
         picture: ecommerce,
         title: 'E-commerce project',
         description: 'showcases a dynamic platform that merges user-friendly design with robust functionality. From intuitive navigation to secure transactions, every element is meticulously crafted to enhance the customer journey.',
-        link: '',
+        link: 'https://github.com/zackcis/E-commerce_Websites-React.js-',
     },
     {
         picture: crypto,
         title: 'Crypto currency project',
         description: 'This endeavor explores the intersection of technology and finance, presenting a dynamic solution that empowers users to navigate the world of digital assets with ease. From blockchain innovation to secure transactions, ',
-        link: '',
+        link: 'https://github.com/zackcis/Hospital_website_frontend',
     },
     {
         picture: movies,
-        title: 'Movies project',
-        description: 'where passion for storytelling meets technological innovation. This endeavor seamlessly integrates design and functionality to create an immersive platform for movie enthusiasts. Discover a user-friendly interface',
-        link: '',
+        title: 'Task management app',
+        description: 'This Laravel-based task management application is designed to streamline project and task organization. Users can create projects, invite team members, and manage tasks efficiently',
+        link: 'https://github.com/zackcis/Zakaria_Dahar_Final_Project_laravel',
     }])
 
     useEffect(() => {
@@ -192,7 +192,7 @@ export const FirstSection = () => {
                                         </a>
                                         <p class="font-normal text-white mb-6 dark:text-gray-400 w-full">{element.description}</p>
                                         <div className=' absolute bottom-3 '>
-                                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            <a href={element.link} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                                 Read more
                                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
