@@ -176,7 +176,7 @@ export const FirstSection = () => {
 
 
             <div name="project" className='projects mb-5 w-full bg-[#101630]  max-[380px]:h-[300vh] max-[430px]:h-[230vh] max-[430px]:my-7  flex flex-col justify-around items-center ' data-aos="fade-down" data-aos-duration="2500">
-                <h1 className='font-bold text-center text-white text-3xl kbira'>
+                <h1 className='font-bold text-center text-white text-3xl kbira mb-4'>
                     PROJECTS
                 </h1>
                 <div className='w-full flex flex-wrap justify-center items-center max-[430px]:flex-col max-[430px]:h-[98%]  max-[430px]:gap-[80px] gap-6'>
