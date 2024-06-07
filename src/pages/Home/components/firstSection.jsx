@@ -236,8 +236,8 @@ export const FirstSection = () => {
                     <h1 className='text-2xl text-white kbira max-[430px]:text-center mt-4'>
                         Contact
                     </h1>
-                    <div className='flex w-full justify-center items-center max-[430px]:flex-col max-[430px]:'>
-                        <div className='w-[90%] max-[430px]:w-[100%]   flex justify-start items-center max-[430px]:flex-col  max-[430px]:items-center max-[430px]:gap-[100px]  max-[430px]:justify-center'>
+                    <div className='flex w-[80%] justify-center items-center max-[430px]:flex-col'>
+                        <div className='w-[80%]  max-[430px]:w-[100%]  flex justify-start items-center max-[430px]:flex-col  max-[430px]:items-center max-[430px]:gap-[100px]  max-[430px]:justify-center'>
                             <div className=' drop-message m-3 flex flex-col gap-7 justify-center     w-[80%]  items-start max-[430px]:justify-center max-[430px]:items-center'>
                                 <h1 className='w-full text-center kbira text-2xl text-white max-[430px]:text-center'>Drop a message</h1>
                                 <p className='w-full max-[430px]:text-center'>
